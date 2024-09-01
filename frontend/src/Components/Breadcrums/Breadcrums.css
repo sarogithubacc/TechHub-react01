@@ -1,0 +1,17 @@
+.breadcrum{
+    display: flex;
+    color: #5e5e5e;
+    align-items: center;
+    gap: 8px;
+   
+    font-size: 16px;
+    font-weight: 600;
+    margin:31px 85px;
+}
+.breadcrum :link {
+    text-decoration: none;
+  }
+  
+  .breadcrum:visited {
+    text-decoration: none;
+  }

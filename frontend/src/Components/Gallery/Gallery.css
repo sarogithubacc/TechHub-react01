@@ -1,0 +1,21 @@
+.gallery {
+    padding: 50px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .galleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+  }
+@media screen and (max-width:600px) {
+  .gallery{
+    display: none;
+  }
+  
+}
+ 
