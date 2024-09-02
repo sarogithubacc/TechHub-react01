@@ -41,7 +41,7 @@ const ListProduct = () => {
         <p className="header-delete">Delete</p>
       </div>
       <div className="listproduct-allproducts">
-        <hr />
+        {/* <hr /> */}
         {allproducts.map((product, index) => (
           <div key={index} className="listproduct-format">
             <img src={product.image} alt={product.name} className="listproduct-product-icon" />

@@ -69,7 +69,7 @@ export default function LoginPage() {
         
         </div>
         <button onClick={()=>{state==="Login"?login():signup()}}>Continue</button>
-      <p className="loginsignup-login">Already have an account?<span onClick={()=>changeState()} style={{cursor:"pointer"}}>Login here!</span> </p>
+      <p className="loginsignup-login">{state==="Login"?"Create an account !":"Already have an account?"}<span onClick={()=>changeState()} style={{cursor:"pointer"}}>{state==="Login"?"Sign Up":"Login"}</span> </p>
        <div className='loginsignup-agree'>
         <input type="checkbox" name='' id='cbcss'></input>
          

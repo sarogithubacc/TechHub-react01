@@ -12,7 +12,7 @@ const AddProduct = () => {
         old_price:"",
         image:"",
         new_price:"",
-        category:"Televisions"
+        category:"televisions"
     })
     const productHandler = (e)=>{
         setProductDetails({...productdDetails,[e.target.name]:e.target.value})
