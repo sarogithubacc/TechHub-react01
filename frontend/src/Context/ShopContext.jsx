@@ -14,7 +14,7 @@ export const ShopContext = createContext(null);
 const ShopContextProvider =(props)=>{
     const[all_product,setAllproduct] = useState([]);
     useEffect(()=>{
-       fetch('http://localhost:4000/allproducts')
+       fetch('https://techhub-react01.onrender.com/allproducts')
        .then((response)=>response.json())
        .then((data)=>setAllproduct(data))
        if(localStorage.getItem('auth-token')){
@@ -36,7 +36,7 @@ const ShopContextProvider =(props)=>{
     const addToCart =(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}));
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/addtocart',{
+            fetch('https://techhub-react01.onrender.com/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -52,7 +52,7 @@ const ShopContextProvider =(props)=>{
     const removeFromCart =(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/removefromcart',{
+            fetch('https://techhub-react01.onrender.com/removefromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
