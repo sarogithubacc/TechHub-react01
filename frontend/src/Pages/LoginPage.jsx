@@ -22,7 +22,7 @@ export default function LoginPage() {
   const login = async () => {
     console.log("this is login",formData)
     let responseData;
-    await fetch("http://localhost:4000/login",{
+    await fetch("https://techhub-react01.onrender.com/login",{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -40,7 +40,7 @@ export default function LoginPage() {
   const signup = async () => {
     console.log("this is sign up",formData)
     let responseData;
-    await fetch("http://localhost:4000/signup",{
+    await fetch("https://techhub-react01.onrender.com/signup",{
       method:'POST',
       headers:{
         Accept:'application/form-data',
